@@ -96,7 +96,7 @@ async def regularLookup(ip: str, proxy: Union[Proxy, None] = None, performGeo: b
         domain = "Unknown"
         ping = None
     
-    if ping:
+    if ping is not None:
 
         if performGeo:
             try:
