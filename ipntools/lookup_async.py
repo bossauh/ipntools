@@ -48,9 +48,13 @@ async def apiLookup(ip: str, proxy: Union[Proxy, None], returnResponse: bool = F
     ua = UserAgent()
     headers = {'User-Agent': ua.random}
     proxies = proxy.raw if proxy else None
-    kwargs = {
-        "proxy": proxies["http"],
-    }
+
+    if proxies:
+        kwargs = {
+            "proxy": proxies["http"],
+        }
+    else:
+        kwargs = {}
     
     tries = 0
     while True:
