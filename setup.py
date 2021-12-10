@@ -7,8 +7,8 @@ setup(
     description="Library that handles ip address and other networking stuff. (Really basic)",
     author="Philippe Mathew",
     author_email="philmattdev@gmail.com",
-    url="",
-    download_url="",
+    url="https://github.com/bossauh/ipntools",
+    download_url="https://github.com/bossauh/ipntools/archive/refs/tags/v_01.tar.gz",
     keywords=["helper"],
     install_requires=[
         "mcstatus",
