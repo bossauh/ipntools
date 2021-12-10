@@ -104,6 +104,8 @@ async def regularLookup(ip: str, proxy: Union[Proxy, None] = None, performGeo: b
             except aiohttp.ClientResponseError as e:
                 if e.status == 429:
                     geolocation = "Rate limit exceeded"
+                else:
+                    geolocation = f"Client Error, Code: {e.status} | {e.message}"
         else:
             geolocation = "Unperformed"
 
