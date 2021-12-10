@@ -123,7 +123,7 @@ async def autoLookUp(ip: str, proxy: Union[Proxy, None] = None) -> dict:
     # Minecraft server
     mcLookupData = await mcLookup(ip)
     if mcLookupData:
-        data["data"] = data
+        data["data"] = mcLookupData
         data["type"] = "minecraft"
         return data
     
