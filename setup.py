@@ -2,20 +2,20 @@ from distutils.core import setup
 setup(
     name="ipntools",
     packages=["ipntools"],
-    version="0.1",
+    version="0.2",
     license="MIT",
     description="Library that handles ip address and other networking stuff. (Really basic)",
     author="Philippe Mathew",
     author_email="philmattdev@gmail.com",
     url="https://github.com/bossauh/ipntools",
-    download_url="https://github.com/bossauh/ipntools/archive/refs/tags/v_01.tar.gz",
+    download_url="https://github.com/bossauh/ipntools/archive/refs/tags/v_02.tar.gz",
     keywords=["helper"],
     install_requires=[
         "mcstatus",
         "fluxhelper",
         "aiohttp",
         "fake_useragent",
-        "beautifulsoup"
+        "beautifulsoup4"
     ],
     classifiers=[
         "Development Status :: 4 - Beta",
