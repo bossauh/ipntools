@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
     name="ipntools",
     packages=["ipntools"],
-    version="0.2",
+    version="0.3",
     license="MIT",
     description="Library that handles ip address and other networking stuff. (Really basic)",
     author="Philippe Mathew",
     author_email="philmattdev@gmail.com",
     url="https://github.com/bossauh/ipntools",
-    download_url="https://github.com/bossauh/ipntools/archive/refs/tags/v_02.tar.gz",
+    download_url="https://github.com/bossauh/ipntools/archive/refs/tags/v_03.tar.gz",
     keywords=["helper"],
     install_requires=[
         "mcstatus",
